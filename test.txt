@@ -28,3 +28,42 @@ remote:      https://github.com/Enna2023/git_repo/pull/new/master
 remote:
 To https://github.com/Enna2023/git_repo
  * [new branch]      master -> master
+
+PS D:\git_repo> git fetch origin master
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 707 bytes | 32.00 KiB/s, done.
+From https://github.com/Enna2023/git_repo
+ * branch            master     -> FETCH_HEAD
+   3252204..0a96923  master     -> origin/master
+PS D:\git_repo> git merge origin/master
+Merge made by the 'ort' strategy.
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+PS D:\git_repo> git push origin master
+Enumerating objects: 9, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.11 KiB | 1.11 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Enna2023/git_repo
+   0a96923..5089237  master -> master
+
+PS D:\git_repo> git push origin --delete main
+To https://github.com/Enna2023/git_repo
+ - [deleted]         main
+
+
+PS D:\git_repo> git clone https://github.com/MushroomRL/mushroom-rl.git
+Cloning into 'mushroom-rl'...
+remote: Enumerating objects: 14802, done.
+remote: Counting objects: 100% (798/798), done.
+remote: Compressing objects: 100% (379/379), done.
+Receiving objects: 100% (14802/14802), 77.29 MiB | 9.93 MiB/s, done. 14004Receiving objects: 100% (14802/14802), 75.56 MiB | 10.90 MiB/s  
+Resolving deltas: 100% (10357/10357), done.
+
