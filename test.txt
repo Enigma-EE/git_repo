@@ -67,3 +67,5 @@ remote: Compressing objects: 100% (379/379), done.
 Receiving objects: 100% (14802/14802), 77.29 MiB | 9.93 MiB/s, done. 14004Receiving objects: 100% (14802/14802), 75.56 MiB | 10.90 MiB/s  
 Resolving deltas: 100% (10357/10357), done.
 
+PS D:\git_repo> git reset --hard 3eefc04f17d7d9fd782c43ba1600a5449a58e2c8
+HEAD is now at 3eefc04 add file
